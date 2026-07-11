@@ -32,11 +32,11 @@ EGDF/
 
 Trains the multi-task GNN described in Section 3.2 of the paper. The model jointly predicts:
 
-- node importance;
-- node problem relevance;
-- edge conflict probability;
-- edge conflict severity;
-- edge problem probability.
+- node importanc
+- node problem relevance
+- edge conflict probability
+- edge conflict severity
+- edge problem probability
 
 The script also performs 5-fold cross-validation and trains the final model using the fixed train/validation/test split.
 
