@@ -32,13 +32,13 @@ EGDF/
 
 Trains the multi-task GNN described in Section 3.2 of the paper. The model jointly predicts:
 
-- node importanc
+- node importance
 - node problem relevance
 - edge conflict probability
 - edge conflict severity
 - edge problem probability
 
-The script also performs 5-fold cross-validation and trains the final model using the fixed train/validation/test split.
+The script also performs 5-fold cross-validation and trains the final model using a reproducible 60/20/20 train/validation/test split.
 
 ### `inference.py`
 
@@ -80,7 +80,7 @@ python inference.py \
 
 ## Dataset
 
-The dataset contains 200 annotated problem-description graphs across four domains: ecology, finance, medicine, and production. Each domain contains 50 samples represented using Extenics matter-elements, affair-elements, and relation-elements.
+The dataset contains 200 annotated problem-description graphs across four domains: ecology, finance, medicine, and production. Each domain contains 50 samples represented using Extenics matter-elements, affair-elements (stored as `action_elements`), and relation-elements.
 
 ## Citation
 
