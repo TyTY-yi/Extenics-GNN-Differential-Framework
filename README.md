@@ -37,7 +37,6 @@ The inference module loads the trained multi-task GNN model to perform quantitat
 ```bash
 python inference.py
 ```
-
 It automates the Extenics analytical process by outputting:
 - **Ranked Key Nodes**: Identifies nodes with high structural centrality based on importance and relevance scores.
 - **Quantified Conflicts**: Detects conflict edges with predicted probability and severity scores.
@@ -50,8 +49,19 @@ The dataset consists of **200 problem-description graphs** modeled using Extenic
 - **Graph Structure**: Data is stored in structured JSON format, mapping natural language descriptions to computable formal graph representations.
 
 ## Citation
-If you use this code or dataset in your research, please cite our paper:
-*Citation details will be updated upon formal acceptance of the manuscript.*
+If you find this repository useful in your research, please cite our paper:
+```bibtex
+@article{cao2026semantic,
+  title={From semantic association to structural reasoning: An extenics-GNN differential framework for guiding LLM solution synthesis},
+  author={Cao, Tianyi},
+  journal={Information Sciences},
+  volume={756},
+  pages={123868},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.ins.2026.123868}
+}
+```
 
-## Note on Open Access
-This repository currently includes the GNN training and inference code along with the full training dataset. The complete framework pipeline will be made publicly available upon acceptance of this paper.
+## Code and Data
+This repository provides the GNN training and inference code, together with the full training dataset used in the paper. For the complete EGDF workflow, including the prompt templates and detailed framework configurations, please refer to the appendices of the paper.
